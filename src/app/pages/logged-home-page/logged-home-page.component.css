@@ -1,0 +1,41 @@
+.logged-home-container {
+    margin: 100px 80px 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+.header-text #title-header-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.header-text #subtitle-header-text {
+    font-size: .9rem;
+    font-weight: 300;
+}
+/*Button*/
+.logged-home-container button {
+    height: 40px;
+    width: 160px;
+    border: none;
+    border-radius: 15px;
+    background-color: #e93838;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logged-home-container button:hover {
+    background-color: #cc3636;
+    transition: .3s;
+}

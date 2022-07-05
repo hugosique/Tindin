@@ -1,0 +1,27 @@
+.footer {
+    background-color: #505050;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.footer span {
+    color: #fff;
+}
+.footer span a {
+    color: #fff;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.social-media-icons a img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}

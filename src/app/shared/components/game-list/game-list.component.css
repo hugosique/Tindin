@@ -1,0 +1,57 @@
+* {
+    color: #fff;
+}
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+.game-list-containter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 80px 0 80px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.game-list-containter a img {
+    width: 280px;
+    height: 130px;
+}
+.game-list-containter a #game-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 3px;
+}
+.game-list-containter a #game-price {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 3px 0;
+}
+.game-list-containter a #game-rating {
+    background-color: #cc3636;
+    padding: 0 3px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+}
+.game-list-containter a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.btn-more-games {
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    background-color: #e93838;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    align-self: center;
+    margin-bottom: 30px;
+}
+.btn-more-games:hover {
+    background-color: #cc3636;
+    transition: .3s;
+}

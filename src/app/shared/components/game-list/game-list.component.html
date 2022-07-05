@@ -1,0 +1,22 @@
+<main class="page-content">
+    <div class="game-list-containter">
+        <a>
+            <img src="https://1.bp.blogspot.com/-THxFd9PVWHs/YJP2l9P_KOI/AAAAAAAAMMk/odJZfF8G11Au3smkkm9iZrF6Xdd7JsbjQCLcBGAsYHQ/s1920/OUTERWILDSS.jpeg" alt="">
+            <span id="game-title"> Outer wilds</span>
+            <span id="game-price"> $177.50</span>
+            <span id="game-rating">7,5/10</span>
+        </a>
+        <div class="game-content" *ngFor="let game of games">
+            <a routerLink="/games/{{ game._id }}">
+                <img [attr.src]="game.photos.url" [attr.alt]="game.photos.name"> <!--SRC não é um property binding nativo e por isso o attr. é passado antes-->
+                <span id="game-title"> {{ game.title }} </span>
+                <span id="game-price"> {{ game.mediumPrice | currency: 'BRL' }}</span>
+                <span id="game-rating"> {{ game.rating }}/ {{ game.totalVotes }}</span>
+            </a>
+        </div>
+
+    </div>
+    <button class="btn-more-games">
+        View more games
+    </button>
+</main>
